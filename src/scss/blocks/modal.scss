@@ -1,0 +1,41 @@
+.modal {
+  display: none;
+  position: fixed;
+  padding: 30px;
+  z-index: 2;
+
+  flex-direction: column;
+
+  background-color: #e8ccff;
+  border-radius: 10px;
+
+  &__close-btn {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+    align-self: flex-end;
+
+    background-color: #000000;
+    color: #e8ccff;
+    font-weight: 600;
+    font-size: 1.9rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+      color: #e8ccff;
+      background-color: #ffffff;
+    }
+  }
+
+  &__img {
+    max-width: 400px;
+    max-height: 450px;
+  }
+
+  &__show {
+    display: flex;
+  }
+}
