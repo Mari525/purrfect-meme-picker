@@ -1,7 +1,7 @@
 .modal {
   display: none;
   position: fixed;
-  padding: 30px;
+  padding: 2rem;
   z-index: 2;
 
   flex-direction: column;
@@ -37,5 +37,11 @@
 
   &__show {
     display: flex;
+  }
+
+  @media (max-width: 450px) {
+    &__img {
+      max-width: 300px;
+    }
   }
 }
